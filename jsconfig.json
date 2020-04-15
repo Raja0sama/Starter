@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "_scene/*": ["src/scene/*"],
+        "_routing/*": ["src/routing/*"],
+        "_reducks/*": ["src/reducks/*"],
+        "app/*" : ["src/*"]
+      }
+    }
+  }
