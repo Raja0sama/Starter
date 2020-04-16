@@ -9,7 +9,7 @@ import {
 import {connect, useSelector} from 'react-redux';
 import React, {useState} from 'react';
 import { addTodo,deleteTodo } from '_reducks/todo'
-
+import { Logout } from 'app/utils/Firebase/authentication'
 
 //A simple Todo example with Redux integretion, 
 // that can manage all most anykind of problem we might 
@@ -65,6 +65,7 @@ const Home = ({todo, dispatch}) => {
             setText('');
           }}
         />
+        <Button title={"Logout"} onPress={Logout}/>
       </View>
     </View>
   );
